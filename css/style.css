@@ -130,14 +130,27 @@ img {
 
 
 
+
+
+/*  DAI 768 IN GIU */
+
+@media screen and (max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: all 2s ease;
+    }
+
+}
+
+
+
 /* DAI 480 IN GIU */
 
 @media screen and (max-width: 480px) {
 
     .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
         transition: all 2s ease;
     }
 
@@ -149,7 +162,6 @@ img {
     width: 100%;
     margin-top: 50px;
     transition: all 2s ease;
-
     }
 
 }
