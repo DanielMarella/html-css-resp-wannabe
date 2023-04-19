@@ -125,33 +125,45 @@ img {
 }
 
 /************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+SOLUZIONE RESPONSIVE
+************************************************/
 
 
 
 
+/* DAI 768px IN SU e FINO A 1160px  */
 
-/*  DAI 768 IN GIU */
+@media screen and (min-width: 768px) and (max-width:1160px) {
+    main{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+        transition: all 0.2s ease-out;
+    }
+}
+
+
+/*  DAI 768px IN GIU */
 
 @media screen and (max-width:768px){
     .container{
         display: flex;
         flex-direction: column;
         width: 100%;
-        transition: all 2s ease;
+        transition: all 2s ease-in;
     }
 
 }
 
 
-
-/* DAI 480 IN GIU */
+/* DAI 480px IN GIU */
 
 @media screen and (max-width: 480px) {
 
     .container{
-        transition: all 2s ease;
+        transition: all 2s ease-in;
     }
 
     .row{
@@ -161,7 +173,7 @@ img {
     .lessons .col{
     width: 100%;
     margin-top: 50px;
-    transition: all 2s ease;
+    transition: all 2s ease-in;
     }
 
 }
@@ -171,7 +183,7 @@ img {
     .steps .col{
     width: 100%;
     margin-top: 50px;
-    transition: all 2s ease;
+    transition: all 2s ease-in;
     }
 
 }
@@ -181,6 +193,7 @@ img {
     .why-us .col{
         width: 100%;
         margin-top: 50px;
-        transition: all 2s ease;
+        transition: all 2s ease-in;
     }
 }
+
